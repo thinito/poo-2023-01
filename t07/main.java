@@ -73,3 +73,62 @@ public class União {
         parceiros [1] = b;
     }
 }
+
+//associação nn
+
+public class Aluno{
+    private Curso[] cursos;
+}
+
+public class Curso{
+    private Aluno[] aluno;
+}
+
+//Algoritmo para Java
+
+public class TesteSomaNaturais{
+    public static long SomaNaturais(int n){
+    int c = 1;
+    long s = 0;
+    while(c<=n){
+        s = s+c;
+        c = c +1;
+        }
+    }
+    
+    public static void main(String [] args){
+        System.out.println(SomaNaturais(10));
+    }
+}
+
+//Aplicação Java
+
+public class Permuta{
+    public static void Permutação(String p, String S){
+    if(S.length()==1){
+        System.out.println(p+S);        
+    } else {
+        String Slinha;
+        String plinha;
+        for(int i = 0, i < S.length(); i++){
+        Slinha = S.substring(0,i) + S.substring(i,1);
+        plinha = p + S.charAt(i);
+        Permutação = (plinha, Slinha);
+        }
+    }
+    }
+    
+    public static void main(String [] args){
+        Permutação (new String().args[0]);
+    }
+}
+
+//composiçao 
+
+public class Religiao{
+    private ArrayList devotos;
+    
+    public void novoFiel(Devoto d){
+    
+    }
+}
