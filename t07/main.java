@@ -1,3 +1,5 @@
+import java.util.TreeSet;
+
 public class Pessoa{
     private short dia;
     private short mes;
@@ -40,3 +42,34 @@ public class Casa{
     }
 }
 
+//Classe abstrata
+
+public abstract class Pessoa{}
+
+//Agregação
+
+public class Festa{
+    private TreeSet convidados = new TreeSet();
+    
+    public void novoConvidado(Convidado c){
+        convidados.add(c);
+    }
+    public Festa(Convidado c) {
+        convidados.add(c);
+    }
+}
+
+//agregação e união
+
+public class União {
+    private ArrayList filhos;
+    private Pessoa parceiros[2];
+     
+    public void novoFilho(Pessoa p){
+        filhos.add(p);
+    }
+    public Uniao(Pessoa a, Pessoa b){
+        parceiros [0] = a;
+        parceiros [1] = b;
+    }
+}
