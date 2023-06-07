@@ -1,4 +1,4 @@
-package Classes;
+package t07;
 public class Pessoa{
     private short dia;
     private short mes;
