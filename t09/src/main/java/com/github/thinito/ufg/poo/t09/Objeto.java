@@ -1,0 +1,4 @@
+package com.github.thinito.ufg.poo.t09;
+
+public class Objeto extends Elemento {
+}
